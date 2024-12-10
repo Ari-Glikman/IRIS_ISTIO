@@ -38,4 +38,5 @@ The following are diagrams to help understand the yamls in a more illustrative f
 ---------------------------------------------------------------------------------------------
 
 ### **irisMirrorSideCar.yaml**
-![image](https://github.com/user-attachments/assets/9f95a352-6783-4296-a2aa-f20f0e0b4cfc)
+![image](https://github.com/user-attachments/assets/c7a54b7a-cfcb-46d6-8cf3-83430cacf915)
+
