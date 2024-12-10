@@ -25,3 +25,17 @@ How to use:
 
 
 
+The following are diagrams to help understand the yamls in a more illustrative form:
+
+### **irisSimple.yaml**
+![image](https://github.com/user-attachments/assets/9090f5b7-f123-4f58-a38a-b4fa70a5a33a)
+
+---------------------------------------------------------------------------------------------
+
+### **irisSimpleSidecCar.yaml**
+![image](https://github.com/user-attachments/assets/196315c2-1165-456b-841b-6bcf8f838f88)
+
+---------------------------------------------------------------------------------------------
+
+### **irisMirrorSideCar.yaml**
+![image](https://github.com/user-attachments/assets/9f95a352-6783-4296-a2aa-f20f0e0b4cfc)
