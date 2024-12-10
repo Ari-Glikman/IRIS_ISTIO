@@ -1,0 +1,58 @@
+apiVersion: intersystems.com/v1alpha1
+kind: IrisCluster
+metadata:
+  name: iris
+spec:
+  licenseKeySecret:
+    name: iris-key-secret
+
+  configSource:
+    name: iris-cpf
+
+  imagePullSecrets:
+    - name: intersystems-pull-secret   
+
+  topology:
+    data:
+      image: containers.intersystems.com/intersystems/irishealth:2024.1
+      compatibilityVersion: "2024.1.2"
+      mirrored: false
+      podTemplate:
+        spec:
+          resources:
+            requests:
+              memory: "8Gi"
+              cpu: "2"
+            limits: 
+              memory: "8Gi"
+              cpu: "2"
+
+    webgateway:
+      replicas: 1
+      image: containers.intersystems.com/intersystems/webgateway:2024.1
+      type: apache
+      applicationPaths:
+        - /csp/sys
+        - /csp/broker
+        - /api
+        - /isc
+        - /oauth2
+        - /ui
+        - /csp/healthshare
+      alternativeServers: LoadBalancing
+      loginSecret:
+        name: iris-webgateway-secret
+      podTemplate:
+        spec:
+          resources:
+            requests:
+              memory: "2Gi"
+              cpu: "1"
+            limits: 
+              memory: "2Gi"
+              cpu: "1"
+
+  serviceTemplate:
+    # ; to enable external IP addresses
+    spec:
+      type: LoadBalancer
