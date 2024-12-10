@@ -1,4 +1,5 @@
 ## These Yamls are for the purpose of understanding the InterSystems Community article: "Getting Started Using Istio Service Mesh with Mirrored IRIS Environment in Kubernetes"
+Note that this is part of an internal contest and the article may not be available for the public yet.
 
 How to use:
 
