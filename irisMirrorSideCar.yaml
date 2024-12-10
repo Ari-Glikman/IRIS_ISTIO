@@ -17,6 +17,21 @@ spec:
       image: containers.intersystems.com/intersystems/irishealth:2024.1
       compatibilityVersion: "2024.1.2"
       mirrored: true
+      #sidecar:
+      webgateway:
+        image: containers.intersystems.com/intersystems/webgateway:2024.1
+        type: apache
+        replicas: 1
+        applicationPaths:
+          - /csp/sys
+          - /csp/healthshare
+          - /api
+          - /csp/broker
+          - /isc
+          - /oauth2
+          - /ui
+        loginSecret:
+           name: iris-webgateway-secret
       podTemplate:
         spec:
           resources:
@@ -29,7 +44,7 @@ spec:
 
     webgateway:
       replicas: 1
-      image: containers.intersystems.com/intersystems/webgateway:2024.1
+      image: irepo.intersystems.com/intersystems/webgateway:2024.1
       type: apache
       applicationPaths:
         - /csp/sys
@@ -63,7 +78,7 @@ spec:
             limits: 
               memory: "1Gi"
               cpu: "1"
- 
+
   serviceTemplate:
     # ; to enable external IP addresses
     spec:
