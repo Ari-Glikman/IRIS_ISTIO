@@ -21,7 +21,6 @@ spec:
       webgateway:
         image: containers.intersystems.com/intersystems/webgateway:2024.1
         type: apache
-        replicas: 1
         applicationPaths:
           - /csp/sys
           - /csp/healthshare
