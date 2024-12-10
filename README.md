@@ -33,7 +33,7 @@ The following are diagrams to help understand the yamls in a more illustrative f
 
 ---------------------------------------------------------------------------------------------
 
-### **irisSimpleSidecCar.yaml**
+### **irisSimpleSideCar.yaml**
 ![image](https://github.com/user-attachments/assets/196315c2-1165-456b-841b-6bcf8f838f88)
 
 ---------------------------------------------------------------------------------------------
