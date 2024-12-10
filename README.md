@@ -10,15 +10,15 @@ How to use:
 
   > kubectl create secret generic iris-key-secret --from-file=iris.key
 
-** note that you will need a key to do this.**
+**note that you will need a key to do this.**
 
   > helm install intersystems iris_operator_amd-3.7.13.100/chart/iris-operator
 
-** See here if you are having problems: https://community.intersystems.com/post/iko-lessons-learned-part-1-helm**
+**See here if you are having problems: https://community.intersystems.com/post/iko-lessons-learned-part-1-helm**
   
   > kubectl create cm iris-cpf --from-file common.cpf
 
-** See here if you are having problems: https://community.intersystems.com/post/iko-lessons-learned-part-2-iriscluster**
+**See here if you are having problems: https://community.intersystems.com/post/iko-lessons-learned-part-2-iriscluster**
   
   > kubectl create secret generic iris-webgateway-secret --from-literal='username=CSPSystem' --from-literal='password=yourPassword'
   
