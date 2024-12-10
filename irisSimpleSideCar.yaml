@@ -43,7 +43,7 @@ spec:
 
     webgateway:
       replicas: 1
-      image: irepo.intersystems.com/intersystems/webgateway:2024.1
+      image: containers.intersystems.com/intersystems/webgateway:2024.1
       type: apache
       applicationPaths:
         - /csp/sys
