@@ -5,7 +5,7 @@ How to use:
 
 1. Make sure you have a Kubernetes Cluster available
 2. In terminal with kubectl config set to your cluster:
-  > kubectl create secret docker-registry intersystems-pull-secret --docker-server=https://containers.intersystems.com --docker-username=yourUsername --docker-password=yourPassword --docker-email=yourPassword
+  > kubectl create secret docker-registry intersystems-pull-secret --docker-server=https://containers.intersystems.com --docker-username='yourUsername' --docker-password='yourPassword' --docker-email='yourEmail'
  
 
   > kubectl create secret generic iris-key-secret --from-file=iris.key
